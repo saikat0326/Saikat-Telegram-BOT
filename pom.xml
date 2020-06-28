@@ -7,15 +7,15 @@
     <sourceDirectory>src</sourceDirectory>
     <plugins>
       <plugin>
-         <groupId>com.heroku.sdk</groupId>
+        <groupId>com.heroku.sdk</groupId>
         <artifactId>heroku-maven-plugin</artifactId>
         <version>3.0.2</version>
         <configuration>
           <release>13</release>
           <appName>TelegramBOT</appName>
           <processTypes>
-     <web>java $JAVA_OPTS -cp target/classes:target/dependency/* Main</web>
-  </processTypes>
+          <web>java $JAVA_OPTS -cp target/classes:target/dependency/* Main</web>
+          </processTypes>
         </configuration>
       </plugin>
     </plugins>
