@@ -9,12 +9,12 @@
       <plugin>
         <groupId>com.heroku.sdk</groupId>
         <artifactId>heroku-maven-plugin</artifactId>
-        <version>3.0.2</version>
+        <version>3.6.2</version>
         <configuration>
           <release>13</release>
           <appName>TelegramBOT</appName>
           <processTypes>
-          <web>java $JAVA_OPTS -cp target/classes:target/dependency/* Main</web>
+          <mainClass>com.TelegramBot.EraserHead.Main</mainClass>
           </processTypes>
         </configuration>
       </plugin>
@@ -30,4 +30,10 @@
 </dependency>
    
   </dependencies>
+  
+  <properties>
+  <maven.compiler.source>1.8</maven.compiler.source>
+  <maven.compiler.target>1.8</maven.compiler.target>
+</properties>
+
 </project>
